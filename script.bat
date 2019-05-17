@@ -1,0 +1,1 @@
+adb shell i=0; while [ $(($i)) -le 40000 ]; do i=$(($i + 1)); cat /proc/stat; cat /proc/55/stat; cat /proc/4754/stat; echo $EPOCHREALTIME; sleep 1; done > cpu_data.txt
